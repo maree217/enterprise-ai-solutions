@@ -1,0 +1,36 @@
+title: Enterprise AI Solutions
+description: Production-ready AI automation templates built on Microsoft's enterprise framework
+url: "https://maree217.github.io"
+baseurl: "/enterprise-ai-solutions"
+
+# Theme
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Navigation
+header_pages:
+  - solutions.md
+  - demos.md
+  - about.md
+  - contact.md
+
+# Company information
+company:
+  name: "Enterprise AI Solutions"
+  tagline: "From Prototype to Production in Days, Not Months"
+  email: "info@yourcompany.com"
+  phone: "+44 (0) 20 7xxx xxxx"
+
+# Social links
+github_username: maree217
+linkedin_username: your-linkedin
+
+# SEO
+google_analytics: UA-XXXXXXXXX-X
+
+# Professional styling
+minima:
+  skin: dark
