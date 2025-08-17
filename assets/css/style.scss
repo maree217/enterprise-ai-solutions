@@ -1,5 +1,217 @@
 ---
 ---
 
-@import "minima";
-@import "custom";
+@import "{{ site.theme }}";
+
+// Custom styles for Enterprise AI Solutions
+
+// Color scheme
+$primary-color: #0078d4;
+$secondary-color: #106ebe;
+$success-color: #28a745;
+$text-color: #333333;
+$light-background: #f8f9fa;
+$border-color: #e9ecef;
+
+// Override Cayman theme colors
+.page-header {
+  background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+}
+
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+  }
+}
+
+// Button styles
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 0.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  
+  &.btn-primary {
+    background-color: $primary-color;
+    color: white !important;
+    border-color: $primary-color;
+    
+    &:hover {
+      background-color: $secondary-color;
+      border-color: $secondary-color;
+      text-decoration: none;
+    }
+  }
+  
+  &.btn-outline {
+    background-color: transparent;
+    color: $primary-color !important;
+    border-color: $primary-color;
+    
+    &:hover {
+      background-color: $primary-color;
+      color: white !important;
+      text-decoration: none;
+    }
+  }
+  
+  &.btn-lg {
+    padding: 16px 32px;
+    font-size: 1.2rem;
+  }
+  
+  &.btn-xl {
+    padding: 20px 40px;
+    font-size: 1.4rem;
+  }
+}
+
+// Solutions cards
+.solution-card {
+  background: white;
+  border: 2px solid $border-color;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: $primary-color;
+  }
+  
+  h3 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+}
+
+// Contact form
+.contact-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 2px solid $border-color;
+    border-radius: 6px;
+    font-size: 1rem;
+    
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+}
+
+// Table styling
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid $border-color;
+  }
+  
+  th {
+    background-color: $light-background;
+    font-weight: 600;
+    color: $primary-color;
+  }
+}
+
+// Feature boxes
+.promise-section {
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.highlight {
+  background: $light-background;
+  border-left: 4px solid $success-color;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+  font-weight: 600;
+}
+
+// Grid layouts
+.solutions-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Custom typography
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 300;
+}
+
+// CTA section
+.cta-buttons {
+  text-align: center;
+  margin: 3rem 0;
+  
+  .btn {
+    margin: 0.5rem;
+  }
+}

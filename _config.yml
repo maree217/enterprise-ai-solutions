@@ -3,19 +3,14 @@ description: Production-ready AI automation templates built on Microsoft's enter
 url: "https://maree217.github.io"
 baseurl: "/enterprise-ai-solutions"
 
-# Theme
-theme: minima
+# Build settings
+markdown: kramdown
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-# Navigation
-header_pages:
-  - solutions.md
-  - demos.md
-  - about.md
-  - contact.md
+  - jekyll-remote-theme
 
 # Company information
 company:
@@ -28,9 +23,5 @@ company:
 github_username: maree217
 linkedin_username: your-linkedin
 
-# SEO
+# Google Analytics
 google_analytics: UA-XXXXXXXXX-X
-
-# Professional styling
-minima:
-  skin: dark
